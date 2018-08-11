@@ -1,0 +1,45 @@
+{
+  "name": "doe-services",
+  "version": "1.0.0",
+  "description": "Serviços para o app/webapp de gerenciamento de doações",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semeietech/doe-services.git"
+  },
+  "author": "@WelGomws",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/semeietech/doe-services/issues"
+  },
+  "homepage": "https://github.com/semeietech/doe-services#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "guid": "0.0.12",
+    "http": "0.0.0",
+    "mongoose": "^5.0.15"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.3",
+    "supertest": "^3.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|jpg|png|scss)$": "<rootDir>/empty-module.js"
+    },
+    "modulePaths": [
+      "<rootDir>/node_modules",
+      "<rootDir>/__tests__"
+    ],
+    "testMatch": [
+      "**/?(*.)(spec).jsx",
+      "**/?(*.)(spec).js"
+    ]
+  }
+}
