@@ -38,6 +38,7 @@
       "<rootDir>/node_modules",
       "<rootDir>/__tests__"
     ],
+    "testURL":"http://localhost:3000",
     "testMatch": [
       "**/?(*.)(spec).jsx",
       "**/?(*.)(spec).js"
