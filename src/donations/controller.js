@@ -1,5 +1,5 @@
-const repository = require('../donations/reporitory');
-
+const repository = require('./reporitory');
+const ValidationContract = require('./validators')
 exports.get = async(req, res, next) => {
     try {
         var data = await repository.get();
@@ -46,6 +46,7 @@ exports.getByID = async(req, res, next) => {
 
 exports.post = async(req, res, next) => {
     let contract = new ValidationContract();
+    console.log(req.body);
     contract.hasMinLen(req.body.title, 3, 'O titulo deve conter pelo menos 3 caracteres');
     contract.hasMinLen(req.body.slug, 3, 'O slug deve conter pelo menos 3 caracteres');
     contract.hasMinLen(req.body.description, 3, 'A description deve conter pelo menos 3 caracteres');

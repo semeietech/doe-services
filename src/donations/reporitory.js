@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Donation = mongoose.model('Donation');
+const Donation = require('./model');
 
 exports.get = async () => {
     const res = await Donation.find({
