@@ -40,7 +40,7 @@
     ],
     "testURL":"http://localhost:3000",
     "testMatch": [
-      "**/?(*.)(spec).jsx",
+      "**/?(*.)(e2e).js",
       "**/?(*.)(spec).js"
     ]
   }

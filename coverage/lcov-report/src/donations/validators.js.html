@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">52% </span>
+        <span class="strong">40% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>13/25</span>
+        <span class='fraction'>10/25</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">18.75% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>3/16</span>
+        <span class='fraction'>0/16</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">33.33% </span>
+        <span class="strong">0% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>3/9</span>
+        <span class='fraction'>0/9</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">52% </span>
+        <span class="strong">40% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>13/25</span>
+        <span class='fraction'>10/25</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line medium'></div>
+  <div class='status-line low'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -93,16 +93,6 @@
 <a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,6 +109,16 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -131,13 +131,13 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span></td><td class="text"><pre class="prettyprint lang-js">let errors = [];
 &nbsp;
-function ValidationContract() {
-    errors = [];
+function <span class="fstat-no" title="function not covered" >ValidationContract(</span>) {
+<span class="cstat-no" title="statement not covered" >    errors = [];</span>
 }
 &nbsp;
 ValidationContract.prototype.isRequired = <span class="fstat-no" title="function not covered" >(v</span>alue, message) =&gt; {
@@ -145,8 +145,8 @@ ValidationContract.prototype.isRequired = <span class="fstat-no" title="function
 <span class="cstat-no" title="statement not covered" >        errors.push({ message: message });</span>
 }
 &nbsp;
-ValidationContract.prototype.hasMinLen = (value, min, message) =&gt; {
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (!value || value.length &lt; min)
+ValidationContract.prototype.hasMinLen = <span class="fstat-no" title="function not covered" >(v</span>alue, min, message) =&gt; {
+<span class="cstat-no" title="statement not covered" >    if (!value || value.length &lt; min)</span>
 <span class="cstat-no" title="statement not covered" >        errors.push({ message: message });</span>
 }
 &nbsp;
@@ -174,8 +174,8 @@ ValidationContract.prototype.clear = <span class="fstat-no" title="function not 
 <span class="cstat-no" title="statement not covered" >    errors = [];</span>
 }
 &nbsp;
-ValidationContract.prototype.isValid = () =&gt; {
-    return errors.length == 0;
+ValidationContract.prototype.isValid = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >    return errors.length == 0;</span>
 }
 &nbsp;
 module.exports = ValidationContract;</pre></td></tr>
@@ -184,7 +184,7 @@ module.exports = ValidationContract;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Sep 15 2018 11:11:30 GMT-0300 (Hora oficial do Brasil)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Sep 15 2018 12:02:21 GMT-0300 (Hora oficial do Brasil)
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

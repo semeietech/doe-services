@@ -19,14 +19,13 @@ describe('Donations api end2end tests', () => {
         const result = await requester.post('/donations')
         .type('application/json')
         .send({
-            "title":"Teclado",
-            "description": "Teclado mecanico",
-            "slug": "teclado-mecanico",
-            "price": "200",
-            "tags": ["Teclado", "gamer", "informatica"],
+            "payment": "Let go",
+            "user": "asdasd",
+            "reward": true,
+            "createdAt": new Date().toISOString()
         });
         expect(result).toHaveProperty('status', 201);
-        expect(result.text).toMatch('Produto cadastrado com sucesso!');
+        expect(result.text).toMatch('Donation registred');
         done();
     });
 });
