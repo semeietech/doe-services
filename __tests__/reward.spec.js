@@ -5,7 +5,7 @@ const requester = httpRequester.agent(server);
 const parse = require('../__tests__/parse');
 const calculateNumberOfRewards = require('../src/rewards/controller').calculateNumberOfRewards;
 
-describe("Rewards", () => {
+describe("Rewards function calculateNumberOfRewards", () => {
     it("calculateNumberOfRewards - give 25 should return 1", () => {
         expect.assertions(1);
         const result = calculateNumberOfRewards(25)
