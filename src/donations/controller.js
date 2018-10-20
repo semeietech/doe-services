@@ -1,4 +1,4 @@
-const repository = require('./reporitory');
+const repository = require('./repository');
 const ValidationContract = require('./validators')
 exports.get = async(req, res, next) => {
     try {

@@ -8,10 +8,9 @@ const schema = new Schema({
     },
     fortuneNumber: {
         type: String,
-        required: true,
     },
     campaignId: {
-        type: Boolean,
+        type: String,
         required: true,
     },
     createdAt: {
@@ -20,8 +19,7 @@ const schema = new Schema({
     },
     updateAt: {
         type: String,
-        required: true,
     },
 });
 
-module.exports = mongoose.model('Reward', schema);
+module.exports = mongoose.model('reward', schema);

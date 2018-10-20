@@ -38,7 +38,7 @@
       "<rootDir>/node_modules",
       "<rootDir>/__tests__"
     ],
-    "testURL":"http://localhost:3000",
+    "testURL": "http://localhost:3000",
     "testMatch": [
       "**/?(*.)(e2e).js",
       "**/?(*.)(spec).js"
