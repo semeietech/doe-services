@@ -6,3 +6,13 @@ exports.create = async(data) => {
     await reward.save();
 };
 
+exports.get = async () => {
+    return Reward.find();
+};
+
+exports.update = async(id, data) => {
+    await Reward
+        .findByIdAndUpdate(id, {
+            $set: data
+        })
+};
