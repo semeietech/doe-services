@@ -2,26 +2,26 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const schema = new Schema({
-    payment: {
+    donationId: {
         type: String,
         required: true,
     },
-    id: {
+    fortuneNumber: {
         type: String,
         required: true,
     },
-    user: {
-        type: String,
-        required: true,
-    },
-    reward: {
+    campaignId: {
         type: Boolean,
         required: true,
     },
     createdAt: {
         type: String,
         required: true,
-    }
+    },
+    updateAt: {
+        type: String,
+        required: true,
+    },
 });
 
-module.exports = mongoose.model('Donation', schema);
+module.exports = mongoose.model('Reward', schema);
